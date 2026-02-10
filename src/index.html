@@ -11,59 +11,15 @@
       href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <nav>
-        <img src="./logo/logo.svg" alt="" />
-
-        <div class="menu">
-          <a href="">Œuvres</a>
-          <a href="">Expositions</a>
-          <a href="">À propos </a>
-          <a href="">Contact</a>
-        </div>
-      </nav>
-
-      <img src="./images/hero.jpg" alt="" />
-
-      <h1 class="titre">Ramenons un peu d'AMORe dans nos villes</h1>
-    </header>
-
-    <section class="hero">
-      <p class="description">
-        Des formes numériques molles et sensibles s'insèrent dans l'architecture
-        rigide. Une présence intérieure, là où l'on ne l'attend pas.
-      </p>
-
-      <section class="details">
-        <h2>Détails du projet</h2>
-
-        <section class="ligne un">
-          <h3>Nom</h3>
-          <p>Présence molle n°03</p>
-        </section>
-
-        <section class="ligne deux">
-          <h3>Catégorie</h3>
-          <p>Sculpture numérique / Intervention urbaine</p>
-        </section>
-
-        <section class="ligne trois">
-          <h3>Services</h3>
-          <p>
-            Modélisation 3D (Blender) Intégration conceptuelle dans l’espace
-            urbain Montage visuel et compositing d’image Design de forme
-            émotionnelle
-          </p>
-        </section>
-
-        <section class="ligne quatre">
-          <h3>Année</h3>
-          <p>2026</p>
-        </section>
-      </section>
-    </section>
+    <include src="./components/header.html"></include>
 
     <main>
       <div class="section">
@@ -97,7 +53,7 @@
         </div>
       </div>
 
-      <div class="section">
+      <div class="section oeuvres">
         <h4>→ Œuvres récentes</h4>
 
         <div class="info">
@@ -254,6 +210,40 @@
         </div>
       </div>
     </main>
+
+    <footer class="footer">
+      <div class="footer-section">
+        <img src="./logo/logo.svg" alt="" />
+
+        <div class="footer-info">
+          <div class="footer-description">
+            <p>Menu</p>
+            <div class="footer-menu">
+              <a href="">Œuvres</a>
+              <a href="">Expositions</a>
+              <a href="">À propos </a>
+              <a href="">Contact</a>
+            </div>
+          </div>
+
+          <div class="footer-description">
+            <p>Contact</p>
+            <div class="footer-menu">
+              <a href="">studio.amore@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-liens">
+        <a href="">Politique de cookies </a>
+        <a href="">Politique de confidentialité </a>
+        <a href="">Politique de protection des données personnelles </a>
+        <a href="">À Responsables du traitement et dépôt des cookies </a>
+        <a href="">Site réalisé par AMoRe Studio</a>
+        <a href="">© AMoRe — 2026</a>
+      </div>
+    </footer>
 
     <script src="js/main.js" type="module"></script>
   </body>
