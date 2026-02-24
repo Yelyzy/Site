@@ -22,9 +22,14 @@
     <include src="./components/header.html"></include>
 
     <main>
-      <div class="section">
+
+      
+      <div class="about">
         <h4>→ À propos</h4>
-        <div class="info">
+
+        <div class="section">
+
+          <div class="info">
           <h1>AMoRe</h1>
 
           <div class="text-bio">
@@ -50,12 +55,16 @@
           </div>
 
           <button>voir plus</button>
+          </div>
         </div>
       </div>
       <div class="oeuvres">
+        
+        <h4>→ Œuvres récentes</h4>
+        
         <div class="section">
-          <h4>→ Œuvres récentes</h4>
-
+          
+        
           <div class="info">
             <h1>Digital Urban Presences</h1>
             <p>
@@ -64,35 +73,33 @@
               silencieuse dans un espace conçu pour la fonction.
             </p>
           </div>
-        </div>
-
-        <div class="gallery">
-          <div class="card">
-            <h4>“Nœud silencieux”</h4>
+        
+          <div class="card one">
+            <h4>“Viscera”</h4>
             <p>
-              Une masse nouée apparaît dans un passage urbain, comme un souvenir
-              condensé.
+              Forme sphérique complexe, gris chromé avec tourbillons et reflets liquides, flottant au-dessus d’une route en ville.
             </p>
+            <a class="card-link" href="#" aria-label="Voir les détails du projet"></a>
           </div>
 
-          <div class="card">
-            <h4>“Nœud silencieux”</h4>
+          <div class="card two">
+            <h4>“AURELIOS”</h4>
             <p>
-              Une masse nouée apparaît dans un passage urbain, comme un souvenir
-              condensé.
-            </p>
+            Sphère centrale dorée et brillante avec extensions, flottant comme un soleil au-dessus d’un décor architectural.            </p>
+            <a class="card-link" href="#" aria-label="Voir les détails du projet"></a>
           </div>
 
-          <div class="card">
-            <h4>“Nœud silencieux”</h4>
+          <div class="card three">
+            <h4>“NEXIS”</h4>
             <p>
-              Une masse nouée apparaît dans un passage urbain, comme un souvenir
-              condensé.
+            Forme organique étrange, gris chromé, faite de multiples sphères reliées entre elles, flottant au cœur d’une intersection urbaine.
+
             </p>
+            <a class="card-link" href="#" aria-label="Voir les détails du projet"></a>
           </div>
-        </div>
+
         <button class="card-btn">Decouvrir les projets</button>
-      </div>
+      </div></div>
 
       <div class="expo">
         <h4>→ Expositions</h4>
@@ -234,8 +241,38 @@
             </div>
           </div>
         </div>
-      </div>
+      
     </main>
+
+    <!-- Modal: Project details -->
+    <div id="project-modal" class="modal-overlay" aria-hidden="true">
+      <div class="modal">
+        <button class="modal-close" aria-label="Close">✕</button>
+        <h2>Détails du projet</h2>
+
+        <div class="modal-table">
+          <div class="modal-row">
+            <div class="modal-key">Nom</div>
+            <div class="modal-value">Présence molle n°03</div>
+          </div>
+
+          <div class="modal-row">
+            <div class="modal-key">Catégorie</div>
+            <div class="modal-value">Sculpture numérique / Intervention urbaine</div>
+          </div>
+
+          <div class="modal-row">
+            <div class="modal-key">Services</div>
+            <div class="modal-value">Modélisation 3D (Blender)<br>Intégration conceptuelle dans l’espace urbain<br>Montage visuel et compositing d’image<br>Design de forme émotionnelle</div>
+          </div>
+
+          <div class="modal-row">
+            <div class="modal-key">Année</div>
+            <div class="modal-value">2026</div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="footer-section">
